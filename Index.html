@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Exam Material</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #e3f2fd, #fce4ec);
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      background: #6200ea;
+      color: white;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      animation: fadeInDown 1s ease-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    section {
+      margin: 40px 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h2 {
+      color: #6200ea;
+      margin-bottom: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #555;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .glow-text {
+      color: #fff;
+      text-shadow: 0 0 5px #fff, 0 0 10px #bb86fc, 0 0 20px #bb86fc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="glow-text">🎓 University Exam Material Portal</h1>
+    <p>Access premium study notes and question papers with ease!</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>📘 Semiconductor Physics – Notes</h2>
+      <iframe src="semiconductor_notes.pdf"></iframe>
+    </div>
+
+    <div class="card">
+      <h2>📄 Semiconductor PYQs</h2>
+      <iframe src="semiconductor_pyq.pdf"></iframe>
+    </div>
+
+    <div class="card">
+      <h2>📘 Probability & Statistics – Notes</h2>
+      <iframe src="probability_notes.pdf"></iframe>
+    </div>
+
+    <div class="card">
+      <h2>📄 Probability PYQs</h2>
+      <iframe src="probability_pyq.pdf"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 | Designed with ❤️ by Students | Premium Version</p>
+  </footer>
+
+</body>
+</html>
